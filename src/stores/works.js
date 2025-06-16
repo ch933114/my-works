@@ -8,7 +8,7 @@ export const useWorksStore = defineStore('works', () => {
   const error = ref(null)
   const token = ref(localStorage.getItem('token') || '') // 拿 token
 
-  建立一個 axios 實例並帶上 token
+  // 建立一個 axios 實例並帶上 token
   const axiosInstance = axios.create({
     baseURL: 'https://dean-works.onrender.com',
     headers: {
